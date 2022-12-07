@@ -37,7 +37,6 @@ fn update(app: &App, model: &mut Model, _update: Update) {
     model.mainspring += app.duration.since_prev_update.as_secs_f32() * model.rate;
 
     //egui
-    //model.egui.set_elapsed_time(update.since_start);
     let ctx = model.egui.begin_frame();
 
     egui::Window::new("Controls").show(&ctx, |ui| {

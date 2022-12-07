@@ -69,13 +69,13 @@ fn view(app: &App, model: &Model, frame: Frame) {
         draw.ellipse()
             .no_fill()
             .radius(( face_radius ) * length )
-            .stroke_color(SLATEBLUE)
+            .stroke_color(MIDNIGHTBLUE)
             .stroke_weight(2.0);
         draw.arrow()
             .points(position*-0.25, position)
             .stroke_weight(16.0 / (h+1) as f32)
             .head_width(20.0 / (h+1) as f32)
-            .color(MINTCREAM);    
+            .color(FIREBRICK);    
     }
     draw.to_frame(app, &frame).unwrap();
     model.egui.draw_to_frame(&frame).unwrap();

@@ -10,8 +10,8 @@ fn main() {
 struct Model {
     mainspring: f32,
     rate:       f32,
-    num_hands:  i8,
-    gear_ratio: i8,
+    num_hands:  i32,
+    gear_ratio: i32,
     egui:       Egui,
 }
 

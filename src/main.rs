@@ -38,8 +38,8 @@ fn update(app: &App, model: &mut Model, _update: Update) {
 
     //egui
     let ctx = model.egui.begin_frame();
-
-    egui::Window::new("Controls").show(&ctx, |ui| {
+    let app_title = app.exe_name().unwrap();
+    egui::Window::new(app_title).show(&ctx, |ui| {
         ui.label("rate:");
         ui.add(egui::Slider::new(&mut model.rate, -10.0..=10.0));
         ui.label("number of hands:");
